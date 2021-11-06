@@ -44,6 +44,8 @@ namespace Team_Dev
             this.clientesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.clientesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.sexosBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.sexosBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.lj0SNYIAIMDataSet1BindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lj0SNYIAIMDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesibfk1BindingSource)).BeginInit();
@@ -54,6 +56,8 @@ namespace Team_Dev
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sexosBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sexosBindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
             // btnvolver
@@ -144,6 +148,16 @@ namespace Team_Dev
             this.dataGridView1.Size = new System.Drawing.Size(628, 480);
             this.dataGridView1.TabIndex = 4;
             // 
+            // sexosBindingSource2
+            // 
+            this.sexosBindingSource2.DataMember = "sexos";
+            this.sexosBindingSource2.DataSource = this.lj0SNYIAIMDataSet1BindingSource1;
+            // 
+            // sexosBindingSource3
+            // 
+            this.sexosBindingSource3.DataMember = "sexos";
+            this.sexosBindingSource3.DataSource = this.lj0SNYIAIMDataSet1BindingSource1;
+            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -169,6 +183,8 @@ namespace Team_Dev
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sexosBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sexosBindingSource3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,5 +205,7 @@ namespace Team_Dev
         private System.Windows.Forms.BindingSource clientesBindingSource1;
         private System.Windows.Forms.BindingSource clientesBindingSource2;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.BindingSource sexosBindingSource2;
+        private System.Windows.Forms.BindingSource sexosBindingSource3;
     }
 }

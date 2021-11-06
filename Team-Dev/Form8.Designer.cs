@@ -166,6 +166,7 @@ namespace Team_Dev
             this.MinimumSize = new System.Drawing.Size(634, 561);
             this.Name = "Form8";
             this.Text = "Form8";
+            this.Load += new System.EventHandler(this.Form8_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
