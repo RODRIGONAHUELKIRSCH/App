@@ -41,6 +41,7 @@ namespace Team_Dev
             this.labelinicio = new System.Windows.Forms.Label();
             this.labelinforme = new System.Windows.Forms.Label();
             this.btnbuscar = new System.Windows.Forms.Button();
+            this.btnpdf = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,6 +89,7 @@ namespace Team_Dev
             this.labelfin.Size = new System.Drawing.Size(67, 16);
             this.labelfin.TabIndex = 4;
             this.labelfin.Text = "Fecha Fin";
+            this.labelfin.Click += new System.EventHandler(this.labelfin_Click);
             // 
             // labelseleccionservicio
             // 
@@ -98,6 +100,7 @@ namespace Team_Dev
             this.labelseleccionservicio.Size = new System.Drawing.Size(131, 16);
             this.labelseleccionservicio.TabIndex = 5;
             this.labelseleccionservicio.Text = "Seleccione Servicio:";
+            this.labelseleccionservicio.Click += new System.EventHandler(this.labelseleccionservicio_Click);
             // 
             // tbinicio
             // 
@@ -106,6 +109,7 @@ namespace Team_Dev
             this.tbinicio.Name = "tbinicio";
             this.tbinicio.Size = new System.Drawing.Size(100, 22);
             this.tbinicio.TabIndex = 6;
+            this.tbinicio.TextChanged += new System.EventHandler(this.tbinicio_TextChanged);
             // 
             // tbfin
             // 
@@ -135,6 +139,7 @@ namespace Team_Dev
             this.labelinicio.Size = new System.Drawing.Size(80, 16);
             this.labelinicio.TabIndex = 9;
             this.labelinicio.Text = "Fecha Inicio";
+            this.labelinicio.Click += new System.EventHandler(this.labelinicio_Click);
             // 
             // labelinforme
             // 
@@ -162,6 +167,19 @@ namespace Team_Dev
             this.btnbuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnbuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnbuscar.UseVisualStyleBackColor = false;
+            this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
+            // 
+            // btnpdf
+            // 
+            this.btnpdf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(182)))), ((int)(((byte)(112)))));
+            this.btnpdf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnpdf.Image = ((System.Drawing.Image)(resources.GetObject("btnpdf.Image")));
+            this.btnpdf.Location = new System.Drawing.Point(541, 511);
+            this.btnpdf.Name = "btnpdf";
+            this.btnpdf.Size = new System.Drawing.Size(57, 35);
+            this.btnpdf.TabIndex = 12;
+            this.btnpdf.UseVisualStyleBackColor = false;
+            this.btnpdf.Click += new System.EventHandler(this.btnpdf_Click);
             // 
             // Form8
             // 
@@ -169,6 +187,7 @@ namespace Team_Dev
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(224)))), ((int)(((byte)(132)))));
             this.ClientSize = new System.Drawing.Size(634, 561);
+            this.Controls.Add(this.btnpdf);
             this.Controls.Add(this.btnbuscar);
             this.Controls.Add(this.labelinforme);
             this.Controls.Add(this.labelinicio);
@@ -205,5 +224,6 @@ namespace Team_Dev
         private System.Windows.Forms.Label labelinicio;
         private System.Windows.Forms.Label labelinforme;
         private System.Windows.Forms.Button btnbuscar;
+        private System.Windows.Forms.Button btnpdf;
     }
 }

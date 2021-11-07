@@ -123,6 +123,9 @@
   <metadata name="lj0SNYIAIMDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="lj0SNYIAIMDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <metadata name="facturasTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>345, 17</value>
   </metadata>
@@ -138,6 +141,15 @@
         /6oN7q9hmSIl4gbhSy+K5Sbvm69uucmr5qtQXDlSJpAX2yYf5CrCr9qpw1FMhUXpmLM9dEVz8cicyTew
         OQuu6UKEReos4sYDY+Zclty2ZeLfyn+3BttkJ8a3SfV/RZ/YZLDFR6uUnjGxYPSDihIVAAAAAElFTkSu
         QmCC
+</value>
+  </data>
+  <data name="btnpdf.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAM9JREFUSEvd
+        ldEJAjEQRFOKFYgdaAmWYCdnJ9qBLdiBlmAHXgc6AwkswybL5vMePEhkZ/YQ8comOcMX/AXe4BQf6BV6
+        Ti3xitSLOaeX2KKeZHqJLerZmFpii3pa0ktsUU/FLgmxRTOGeKGMIV4oY4gXyhjihTKG6PABXqs87+G9
+        3nfwCDUzRIef8ARZyPMXsph3/jz5mWaG6DCL+O/aFqywLeDiBWpmiA63MwvbV/Sod2rnaYgGsoZ4oYwh
+        mReO+oYhfGVy0CsYyQdjdlOU8gdbrAgitPSUDAAAAABJRU5ErkJggg==
 </value>
   </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

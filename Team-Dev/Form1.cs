@@ -21,7 +21,7 @@ namespace Team_Dev
         private int contraseña = 0;
         private void labelcontraseña_Click(object sender, EventArgs e)
         {
-
+            tbcontraseña.Focus();
         }
 
         private void tbusuario_TextChanged(object sender, EventArgs e)
@@ -38,7 +38,7 @@ namespace Team_Dev
         {
             if (usuario == 1 && contraseña == 1)
             {
-
+               
                 Form2 form2 = new Form2(this);
                 form2.Show();
                 this.Hide();
@@ -56,6 +56,39 @@ namespace Team_Dev
                 form4.Show();
                 this.Hide();
             }
+        }
+
+        private void labelusuario_Click(object sender, EventArgs e)
+        {
+            tbusuario.Focus();
+        }
+
+        private void btningresar_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) 
+            {
+                if (usuario == 1 && contraseña == 1)
+                {
+
+                    Form2 form2 = new Form2(this);
+                    form2.Show();
+                    this.Hide();
+                }
+                if (usuario == 2 && contraseña == 2)
+                {
+                    Form3 form3 = new Form3(this);
+                    form3.Show();
+                    this.Hide();
+                }
+                if (usuario == 3 && contraseña == 3)
+                {
+
+                    Form4 form4 = new Form4(this);
+                    form4.Show();
+                    this.Hide();
+                }
+            }
+           
         }
     }
 }

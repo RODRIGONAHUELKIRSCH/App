@@ -50,6 +50,7 @@ namespace Team_Dev
             this.lj0SNYIAIMDataSet1 = new Team_Dev.lj0SNYIAIMDataSet();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.cbseleccionpago = new System.Windows.Forms.ComboBox();
+            this.btnpdf = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.facturasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lj0SNYIAIMDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -114,6 +115,7 @@ namespace Team_Dev
             this.label2.Size = new System.Drawing.Size(67, 16);
             this.label2.TabIndex = 5;
             this.label2.Text = "Fecha Fin";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // tbfechainicio
             // 
@@ -142,6 +144,7 @@ namespace Team_Dev
             this.label3.Size = new System.Drawing.Size(180, 16);
             this.label3.TabIndex = 8;
             this.label3.Text = "Seleccione Metodo de Pago";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // labelinformepagos
             // 
@@ -152,6 +155,7 @@ namespace Team_Dev
             this.labelinformepagos.Size = new System.Drawing.Size(104, 16);
             this.labelinformepagos.TabIndex = 11;
             this.labelinformepagos.Text = "Generar Informe";
+            this.labelinformepagos.Click += new System.EventHandler(this.labelinformepagos_Click);
             // 
             // dataGridView1
             // 
@@ -238,6 +242,19 @@ namespace Team_Dev
             this.cbseleccionpago.Size = new System.Drawing.Size(152, 28);
             this.cbseleccionpago.TabIndex = 14;
             this.cbseleccionpago.Text = "Elija una opcion";
+            this.cbseleccionpago.SelectedIndexChanged += new System.EventHandler(this.cbseleccionpago_SelectedIndexChanged);
+            // 
+            // btnpdf
+            // 
+            this.btnpdf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(182)))), ((int)(((byte)(112)))));
+            this.btnpdf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnpdf.Image = ((System.Drawing.Image)(resources.GetObject("btnpdf.Image")));
+            this.btnpdf.Location = new System.Drawing.Point(551, 517);
+            this.btnpdf.Name = "btnpdf";
+            this.btnpdf.Size = new System.Drawing.Size(47, 32);
+            this.btnpdf.TabIndex = 15;
+            this.btnpdf.UseVisualStyleBackColor = false;
+            this.btnpdf.Click += new System.EventHandler(this.btnpdf_Click);
             // 
             // Form5
             // 
@@ -245,6 +262,7 @@ namespace Team_Dev
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(224)))), ((int)(((byte)(132)))));
             this.ClientSize = new System.Drawing.Size(634, 561);
+            this.Controls.Add(this.btnpdf);
             this.Controls.Add(this.cbseleccionpago);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.dataGridView1);
@@ -290,5 +308,6 @@ namespace Team_Dev
         private System.Windows.Forms.DataGridViewTextBoxColumn idturnoDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.ComboBox cbseleccionpago;
+        private System.Windows.Forms.Button btnpdf;
     }
 }

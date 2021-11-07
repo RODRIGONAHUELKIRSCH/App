@@ -57,6 +57,7 @@
             this.labelusuario.Size = new System.Drawing.Size(96, 29);
             this.labelusuario.TabIndex = 1;
             this.labelusuario.Text = "Usuario";
+            this.labelusuario.Click += new System.EventHandler(this.labelusuario_Click);
             // 
             // labelcontraseña
             // 
@@ -108,6 +109,7 @@
             this.btningresar.Text = "Ingresar";
             this.btningresar.UseVisualStyleBackColor = true;
             this.btningresar.Click += new System.EventHandler(this.btningresar_Click);
+            this.btningresar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btningresar_KeyDown);
             // 
             // Form1
             // 

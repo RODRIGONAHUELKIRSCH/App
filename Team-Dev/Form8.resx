@@ -128,4 +128,13 @@
         QmCC
 </value>
   </data>
+  <data name="btnpdf.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAM9JREFUSEvd
+        ldEJAjEQRFOKFYgdaAmWYCdnJ9qBLdiBlmAHXgc6AwkswybL5vMePEhkZ/YQ8comOcMX/AXe4BQf6BV6
+        Ti3xitSLOaeX2KKeZHqJLerZmFpii3pa0ktsUU/FLgmxRTOGeKGMIV4oY4gXyhjihTKG6PABXqs87+G9
+        3nfwCDUzRIef8ARZyPMXsph3/jz5mWaG6DCL+O/aFqywLeDiBWpmiA63MwvbV/Sod2rnaYgGsoZ4oYwh
+        mReO+oYhfGVy0CsYyQdjdlOU8gdbrAgitPSUDAAAAABJRU5ErkJggg==
+</value>
+  </data>
 </root>

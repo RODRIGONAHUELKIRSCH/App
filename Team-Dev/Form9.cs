@@ -90,7 +90,7 @@ namespace Team_Dev
 
         private void btnadd_Click(object sender, EventArgs e)
         {
-            
+            addPersonal();
         }
 
         private void addPersonal()
