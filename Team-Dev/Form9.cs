@@ -97,7 +97,7 @@ namespace Team_Dev
         {
             try
             {
-                string sqlcommand = "insert into profesionales (" + id_prof + "," + nombre + "," + apellido + "," + permiso + "," + usuario + "," + clave + "," + id_sexo + ";";
+                string sqlcommand = "insert into profesionales (" + id_prof + "," + nombre + "," + apellido + "," + permiso + "," + usuario + "," + clave + "," + id_sexo + ");";
                 MySqlCommand comando = new MySqlCommand(sqlcommand, connection);
 
             }
