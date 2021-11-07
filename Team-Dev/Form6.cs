@@ -53,7 +53,7 @@ namespace Team_Dev
             }
             catch (Exception)
             {
-                MessageBox.Show("Database error");
+                MessageBox.Show("Database error","Conexion a Database",MessageBoxButtons.OK,MessageBoxIcon.Warning);
             }
         }
         private  void consultaClientes(DataGridView d1)

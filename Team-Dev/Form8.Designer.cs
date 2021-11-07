@@ -29,6 +29,7 @@ namespace Team_Dev
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form8));
             this.labelturnos = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnvolver = new System.Windows.Forms.Button();
@@ -39,6 +40,7 @@ namespace Team_Dev
             this.cbseleccionservicio = new System.Windows.Forms.ComboBox();
             this.labelinicio = new System.Windows.Forms.Label();
             this.labelinforme = new System.Windows.Forms.Label();
+            this.btnbuscar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,27 +82,27 @@ namespace Team_Dev
             // labelfin
             // 
             this.labelfin.AutoSize = true;
-            this.labelfin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelfin.Location = new System.Drawing.Point(134, 492);
+            this.labelfin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelfin.Location = new System.Drawing.Point(119, 492);
             this.labelfin.Name = "labelfin";
-            this.labelfin.Size = new System.Drawing.Size(75, 20);
+            this.labelfin.Size = new System.Drawing.Size(67, 16);
             this.labelfin.TabIndex = 4;
-            this.labelfin.Text = "Fecha fin";
+            this.labelfin.Text = "Fecha Fin";
             // 
             // labelseleccionservicio
             // 
             this.labelseleccionservicio.AutoSize = true;
-            this.labelseleccionservicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelseleccionservicio.Location = new System.Drawing.Point(256, 492);
+            this.labelseleccionservicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelseleccionservicio.Location = new System.Drawing.Point(224, 492);
             this.labelseleccionservicio.Name = "labelseleccionservicio";
-            this.labelseleccionservicio.Size = new System.Drawing.Size(150, 20);
+            this.labelseleccionservicio.Size = new System.Drawing.Size(131, 16);
             this.labelseleccionservicio.TabIndex = 5;
             this.labelseleccionservicio.Text = "Seleccione Servicio:";
             // 
             // tbinicio
             // 
             this.tbinicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbinicio.Location = new System.Drawing.Point(13, 524);
+            this.tbinicio.Location = new System.Drawing.Point(3, 524);
             this.tbinicio.Name = "tbinicio";
             this.tbinicio.Size = new System.Drawing.Size(100, 22);
             this.tbinicio.TabIndex = 6;
@@ -108,7 +110,7 @@ namespace Team_Dev
             // tbfin
             // 
             this.tbfin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbfin.Location = new System.Drawing.Point(128, 524);
+            this.tbfin.Location = new System.Drawing.Point(109, 524);
             this.tbfin.Name = "tbfin";
             this.tbfin.Size = new System.Drawing.Size(100, 22);
             this.tbfin.TabIndex = 7;
@@ -118,7 +120,7 @@ namespace Team_Dev
             // 
             this.cbseleccionservicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbseleccionservicio.FormattingEnabled = true;
-            this.cbseleccionservicio.Location = new System.Drawing.Point(256, 522);
+            this.cbseleccionservicio.Location = new System.Drawing.Point(215, 522);
             this.cbseleccionservicio.Name = "cbseleccionservicio";
             this.cbseleccionservicio.Size = new System.Drawing.Size(150, 24);
             this.cbseleccionservicio.TabIndex = 8;
@@ -127,23 +129,39 @@ namespace Team_Dev
             // labelinicio
             // 
             this.labelinicio.AutoSize = true;
-            this.labelinicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelinicio.Location = new System.Drawing.Point(10, 492);
+            this.labelinicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelinicio.Location = new System.Drawing.Point(-1, 492);
             this.labelinicio.Name = "labelinicio";
-            this.labelinicio.Size = new System.Drawing.Size(93, 20);
+            this.labelinicio.Size = new System.Drawing.Size(80, 16);
             this.labelinicio.TabIndex = 9;
-            this.labelinicio.Text = "Fecha inicio";
+            this.labelinicio.Text = "Fecha Inicio";
             // 
             // labelinforme
             // 
             this.labelinforme.AutoSize = true;
-            this.labelinforme.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelinforme.Location = new System.Drawing.Point(457, 492);
+            this.labelinforme.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelinforme.Location = new System.Drawing.Point(515, 492);
             this.labelinforme.Name = "labelinforme";
-            this.labelinforme.Size = new System.Drawing.Size(131, 20);
+            this.labelinforme.Size = new System.Drawing.Size(107, 16);
             this.labelinforme.TabIndex = 10;
             this.labelinforme.Text = "Generar Informe:";
             this.labelinforme.Click += new System.EventHandler(this.labelinforme_Click);
+            // 
+            // btnbuscar
+            // 
+            this.btnbuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(186)))), ((int)(((byte)(78)))));
+            this.btnbuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnbuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnbuscar.Image")));
+            this.btnbuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnbuscar.Location = new System.Drawing.Point(397, 513);
+            this.btnbuscar.Name = "btnbuscar";
+            this.btnbuscar.Size = new System.Drawing.Size(103, 32);
+            this.btnbuscar.TabIndex = 11;
+            this.btnbuscar.Text = "Buscar";
+            this.btnbuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnbuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnbuscar.UseVisualStyleBackColor = false;
             // 
             // Form8
             // 
@@ -151,6 +169,7 @@ namespace Team_Dev
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(224)))), ((int)(((byte)(132)))));
             this.ClientSize = new System.Drawing.Size(634, 561);
+            this.Controls.Add(this.btnbuscar);
             this.Controls.Add(this.labelinforme);
             this.Controls.Add(this.labelinicio);
             this.Controls.Add(this.cbseleccionservicio);
@@ -185,5 +204,6 @@ namespace Team_Dev
         private System.Windows.Forms.ComboBox cbseleccionservicio;
         private System.Windows.Forms.Label labelinicio;
         private System.Windows.Forms.Label labelinforme;
+        private System.Windows.Forms.Button btnbuscar;
     }
 }

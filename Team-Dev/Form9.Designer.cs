@@ -46,8 +46,8 @@ namespace Team_Dev
             this.tbcontraseña = new System.Windows.Forms.TextBox();
             this.tbsexo = new System.Windows.Forms.TextBox();
             this.btnvolver = new System.Windows.Forms.Button();
-            this.btnaddpersonal = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnadd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -141,6 +141,7 @@ namespace Team_Dev
             this.tbid.Name = "tbid";
             this.tbid.Size = new System.Drawing.Size(150, 26);
             this.tbid.TabIndex = 8;
+            this.tbid.TextChanged += new System.EventHandler(this.tbid_TextChanged);
             // 
             // tbnombre
             // 
@@ -150,6 +151,7 @@ namespace Team_Dev
             this.tbnombre.Name = "tbnombre";
             this.tbnombre.Size = new System.Drawing.Size(150, 26);
             this.tbnombre.TabIndex = 9;
+            this.tbnombre.TextChanged += new System.EventHandler(this.tbnombre_TextChanged);
             // 
             // tbapellido
             // 
@@ -159,6 +161,7 @@ namespace Team_Dev
             this.tbapellido.Name = "tbapellido";
             this.tbapellido.Size = new System.Drawing.Size(150, 26);
             this.tbapellido.TabIndex = 10;
+            this.tbapellido.TextChanged += new System.EventHandler(this.tbapellido_TextChanged);
             // 
             // tbpermiso
             // 
@@ -168,6 +171,7 @@ namespace Team_Dev
             this.tbpermiso.Name = "tbpermiso";
             this.tbpermiso.Size = new System.Drawing.Size(150, 26);
             this.tbpermiso.TabIndex = 11;
+            this.tbpermiso.TextChanged += new System.EventHandler(this.tbpermiso_TextChanged);
             // 
             // tbuser
             // 
@@ -177,6 +181,7 @@ namespace Team_Dev
             this.tbuser.Name = "tbuser";
             this.tbuser.Size = new System.Drawing.Size(150, 26);
             this.tbuser.TabIndex = 12;
+            this.tbuser.TextChanged += new System.EventHandler(this.tbuser_TextChanged);
             // 
             // tbcontraseña
             // 
@@ -186,6 +191,7 @@ namespace Team_Dev
             this.tbcontraseña.Name = "tbcontraseña";
             this.tbcontraseña.Size = new System.Drawing.Size(150, 26);
             this.tbcontraseña.TabIndex = 13;
+            this.tbcontraseña.TextChanged += new System.EventHandler(this.tbcontraseña_TextChanged);
             // 
             // tbsexo
             // 
@@ -195,6 +201,7 @@ namespace Team_Dev
             this.tbsexo.Name = "tbsexo";
             this.tbsexo.Size = new System.Drawing.Size(150, 26);
             this.tbsexo.TabIndex = 14;
+            this.tbsexo.TextChanged += new System.EventHandler(this.tbsexo_TextChanged);
             // 
             // btnvolver
             // 
@@ -210,19 +217,6 @@ namespace Team_Dev
             this.btnvolver.UseVisualStyleBackColor = false;
             this.btnvolver.Click += new System.EventHandler(this.btnvolver_Click);
             // 
-            // btnaddpersonal
-            // 
-            this.btnaddpersonal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(184)))), ((int)(((byte)(132)))));
-            this.btnaddpersonal.FlatAppearance.BorderSize = 2;
-            this.btnaddpersonal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnaddpersonal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnaddpersonal.Location = new System.Drawing.Point(421, 499);
-            this.btnaddpersonal.Name = "btnaddpersonal";
-            this.btnaddpersonal.Size = new System.Drawing.Size(190, 35);
-            this.btnaddpersonal.TabIndex = 16;
-            this.btnaddpersonal.Text = "Agregar Personal";
-            this.btnaddpersonal.UseVisualStyleBackColor = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -233,14 +227,28 @@ namespace Team_Dev
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
             // 
+            // btnadd
+            // 
+            this.btnadd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(184)))), ((int)(((byte)(132)))));
+            this.btnadd.FlatAppearance.BorderSize = 2;
+            this.btnadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnadd.Location = new System.Drawing.Point(410, 489);
+            this.btnadd.Name = "btnadd";
+            this.btnadd.Size = new System.Drawing.Size(190, 35);
+            this.btnadd.TabIndex = 18;
+            this.btnadd.Text = "Agregar Personal";
+            this.btnadd.UseVisualStyleBackColor = false;
+            this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
+            // 
             // Form9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(224)))), ((int)(((byte)(132)))));
             this.ClientSize = new System.Drawing.Size(634, 561);
+            this.Controls.Add(this.btnadd);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btnaddpersonal);
             this.Controls.Add(this.btnvolver);
             this.Controls.Add(this.tbsexo);
             this.Controls.Add(this.tbcontraseña);
@@ -286,7 +294,7 @@ namespace Team_Dev
         private System.Windows.Forms.TextBox tbcontraseña;
         private System.Windows.Forms.TextBox tbsexo;
         private System.Windows.Forms.Button btnvolver;
-        private System.Windows.Forms.Button btnaddpersonal;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnadd;
     }
 }

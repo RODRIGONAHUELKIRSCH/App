@@ -30,6 +30,7 @@ namespace Team_Dev
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             this.btnvolver = new System.Windows.Forms.Button();
             this.facturasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lj0SNYIAIMDataSet = new Team_Dev.lj0SNYIAIMDataSet();
@@ -40,14 +41,15 @@ namespace Team_Dev
             this.tbfechainicio = new System.Windows.Forms.TextBox();
             this.tbfechafin = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.cbtipodepago = new System.Windows.Forms.ComboBox();
             this.labelinformepagos = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lj0SNYIAIMDataSet1 = new Team_Dev.lj0SNYIAIMDataSet();
             this.idfacturaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechahorafacturaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.preciototalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idturnoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lj0SNYIAIMDataSet1 = new Team_Dev.lj0SNYIAIMDataSet();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.cbseleccionpago = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.facturasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lj0SNYIAIMDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -100,33 +102,34 @@ namespace Team_Dev
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 16);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Fecha inicio";
+            this.label1.Text = "Fecha Inicio";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(146, 492);
+            this.label2.Location = new System.Drawing.Point(98, 492);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 16);
+            this.label2.Size = new System.Drawing.Size(67, 16);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Fecha fin";
+            this.label2.Text = "Fecha Fin";
             // 
             // tbfechainicio
             // 
             this.tbfechainicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbfechainicio.Location = new System.Drawing.Point(3, 518);
             this.tbfechainicio.Name = "tbfechainicio";
-            this.tbfechainicio.Size = new System.Drawing.Size(120, 31);
+            this.tbfechainicio.Size = new System.Drawing.Size(92, 31);
             this.tbfechainicio.TabIndex = 6;
+            this.tbfechainicio.TextChanged += new System.EventHandler(this.tbfechainicio_TextChanged);
             // 
             // tbfechafin
             // 
             this.tbfechafin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbfechafin.Location = new System.Drawing.Point(149, 518);
+            this.tbfechafin.Location = new System.Drawing.Point(101, 517);
             this.tbfechafin.Name = "tbfechafin";
-            this.tbfechafin.Size = new System.Drawing.Size(120, 31);
+            this.tbfechafin.Size = new System.Drawing.Size(94, 31);
             this.tbfechafin.TabIndex = 7;
             this.tbfechafin.TextChanged += new System.EventHandler(this.tbfechafin_TextChanged);
             // 
@@ -134,27 +137,17 @@ namespace Team_Dev
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(297, 492);
+            this.label3.Location = new System.Drawing.Point(198, 492);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(180, 16);
             this.label3.TabIndex = 8;
             this.label3.Text = "Seleccione Metodo de Pago";
             // 
-            // cbtipodepago
-            // 
-            this.cbtipodepago.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbtipodepago.FormattingEnabled = true;
-            this.cbtipodepago.Location = new System.Drawing.Point(300, 521);
-            this.cbtipodepago.Name = "cbtipodepago";
-            this.cbtipodepago.Size = new System.Drawing.Size(140, 28);
-            this.cbtipodepago.TabIndex = 9;
-            this.cbtipodepago.SelectedIndexChanged += new System.EventHandler(this.cbtipodepago_SelectedIndexChanged);
-            // 
             // labelinformepagos
             // 
             this.labelinformepagos.AutoSize = true;
             this.labelinformepagos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelinformepagos.Location = new System.Drawing.Point(501, 492);
+            this.labelinformepagos.Location = new System.Drawing.Point(518, 492);
             this.labelinformepagos.Name = "labelinformepagos";
             this.labelinformepagos.Size = new System.Drawing.Size(104, 16);
             this.labelinformepagos.TabIndex = 11;
@@ -178,11 +171,6 @@ namespace Team_Dev
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(628, 420);
             this.dataGridView1.TabIndex = 12;
-            // 
-            // lj0SNYIAIMDataSet1
-            // 
-            this.lj0SNYIAIMDataSet1.DataSetName = "lj0SNYIAIMDataSet";
-            this.lj0SNYIAIMDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // idfacturaDataGridViewTextBoxColumn
             // 
@@ -216,15 +204,51 @@ namespace Team_Dev
             this.idturnoDataGridViewTextBoxColumn.Name = "idturnoDataGridViewTextBoxColumn";
             this.idturnoDataGridViewTextBoxColumn.Width = 150;
             // 
+            // lj0SNYIAIMDataSet1
+            // 
+            this.lj0SNYIAIMDataSet1.DataSetName = "lj0SNYIAIMDataSet";
+            this.lj0SNYIAIMDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(186)))), ((int)(((byte)(78)))));
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
+            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscar.Location = new System.Drawing.Point(388, 515);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(103, 32);
+            this.btnBuscar.TabIndex = 13;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // cbseleccionpago
+            // 
+            this.cbseleccionpago.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbseleccionpago.FormattingEnabled = true;
+            this.cbseleccionpago.Items.AddRange(new object[] {
+            "Credito ",
+            "Debito"});
+            this.cbseleccionpago.Location = new System.Drawing.Point(201, 521);
+            this.cbseleccionpago.Name = "cbseleccionpago";
+            this.cbseleccionpago.Size = new System.Drawing.Size(152, 28);
+            this.cbseleccionpago.TabIndex = 14;
+            this.cbseleccionpago.Text = "Elija una opcion";
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(224)))), ((int)(((byte)(132)))));
             this.ClientSize = new System.Drawing.Size(634, 561);
+            this.Controls.Add(this.cbseleccionpago);
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.labelinformepagos);
-            this.Controls.Add(this.cbtipodepago);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.tbfechafin);
             this.Controls.Add(this.tbfechainicio);
@@ -236,7 +260,6 @@ namespace Team_Dev
             this.MaximumSize = new System.Drawing.Size(634, 561);
             this.MinimumSize = new System.Drawing.Size(634, 561);
             this.Name = "Form5";
-            this.Text = "Form5";
             this.Load += new System.EventHandler(this.Form5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.facturasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lj0SNYIAIMDataSet)).EndInit();
@@ -258,7 +281,6 @@ namespace Team_Dev
         private System.Windows.Forms.TextBox tbfechainicio;
         private System.Windows.Forms.TextBox tbfechafin;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cbtipodepago;
         private System.Windows.Forms.Label labelinformepagos;
         private System.Windows.Forms.DataGridView dataGridView1;
         private lj0SNYIAIMDataSet lj0SNYIAIMDataSet1;
@@ -266,5 +288,7 @@ namespace Team_Dev
         private System.Windows.Forms.DataGridViewTextBoxColumn fechahorafacturaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn preciototalDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idturnoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.ComboBox cbseleccionpago;
     }
 }

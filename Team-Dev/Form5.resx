@@ -123,15 +123,23 @@
   <metadata name="lj0SNYIAIMDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="lj0SNYIAIMDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <metadata name="facturasTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>345, 17</value>
   </metadata>
   <metadata name="lj0SNYIAIMDataSet1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>513, 17</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnBuscar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAOZJREFUSEvd
+        leERATEQhVOCjihBB5SgAzqhAzqgA0rQAR3wvuPNZIy7y4b7c2/mm8lld5PsbkIarSZiLc7i8YYxc9h+
+        0lLchBf+BBs+VSLQCx3ETFiMT8L2uQiJ1H3yrhNuBD74hsrlQE7eJ2dCTLEugqC8LG3CB18aXywCoFRR
+        /6oN7q9hmSIl4gbhSy+K5Sbvm69uucmr5qtQXDlSJpAX2yYf5CrCr9qpw1FMhUXpmLM9dEVz8cicyTew
+        OQuu6UKEReos4sYDY+Zclty2ZeLfyn+3BttkJ8a3SfV/RZ/YZLDFR6uUnjGxYPSDihIVAAAAAElFTkSu
+        QmCC
+</value>
+  </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>35</value>
   </metadata>
